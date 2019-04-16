@@ -1,0 +1,38 @@
+
+
+.row {
+    height: 10vh;
+}
+
+.column1 {
+    float: left;
+    width: 20%;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+}
+
+.column3 {
+    float: left;
+    width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    background-color: aqua;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

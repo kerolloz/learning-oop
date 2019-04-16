@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>OOP Exercises</title>
+  <script src="exercise.js"></script>
+  <script src="node_modules/codemirror/lib/codemirror.js"></script>
+  <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+  <script src="node_modules/codemirror/mode/clike/clike.js"></script>
+
+  <style>
+    .CodeMirror {
+      border-top: 1px grey;
+      border-bottom: 1px gray;
+      height:90vh;
+    }
+
+    .CodeMirror pre>* {
+      text-indent: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row header">
+    <div class="column1">
+      <h1 class="header">Exercises</h1>
+    </div>
+    <div class="column2">
+      <h1 class="header">Exercise Preview</h1>
+
+    </div>
+    <div class="column3">
+      <h1 class="header">Code</h1>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="column1">
+      <ul>
+        <script>
+          writeExercises()
+        </script>
+      </ul>
+    </div>
+    <div class="column2">
+      <div id="exerciseDetails">Choose an exercise first!</div>
+    </div>
+    <div class="column3">
+      <div id="codeEditor"></div>
+    </div>
+  </div>
+
+  <script>
+    var myCodeMirror = CodeMirror(document.getElementById("codeEditor"), {
+      value: "//Your code Here",
+      lineNumbers: true,
+      lineWrapping: true,
+      matchBrackets: true,
+      mode: "text/x-c++src"
+    });
+  </script>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>
