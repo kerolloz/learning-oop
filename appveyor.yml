@@ -15,7 +15,7 @@ install:
   - npm install
 
 build_script:
-  - npm run build
+  - npm run dist
 
 artifacts:
   path: dist
