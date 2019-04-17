@@ -1,5 +1,10 @@
 #include <stdlib.h>
-#include <unistd.h>
+#ifdef _WIN32
+    #include <direct.h>
+    #define getcwd _getcwd // stupid MSFT "deprecation" warning
+#else
+    #include <unistd.h>
+#endif
 #include "flags.hpp"
 
 using namespace std;
