@@ -18,7 +18,7 @@ build_script:
   - npm run rebuild
 
 artifacts:
-  path: .
+  path: .\
   name: all
 
 test: off
