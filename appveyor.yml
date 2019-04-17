@@ -15,7 +15,7 @@ install:
   - npm install
 
 build_script:
-  - npm run dist
+  - npm run dist --publish always
 environment:
   GH_TOKEN: 
     secure: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
