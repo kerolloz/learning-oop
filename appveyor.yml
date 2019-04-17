@@ -12,9 +12,9 @@ init:
 
 install:
   - ps: Install-Product node 8 x64
-  - yarn
+  - npm install
 
 build_script:
-  - .\node_modules\.bin\electron-builder
+  - npm run rebuild
 
 test: off
