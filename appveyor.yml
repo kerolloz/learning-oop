@@ -16,7 +16,7 @@ install:
 
 build_script:
   - npm run dist
-enviorment:
+environment:
   GH_TOKEN: 
     secure: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
 
