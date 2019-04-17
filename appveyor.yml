@@ -15,10 +15,10 @@ install:
   - npm install
 
 build_script:
-  - npm run rebuild
+  - npm run build
 
 artifacts:
-  path: .\
+  path: 
   name: all
 
 test: off
