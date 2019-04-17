@@ -17,4 +17,17 @@ install:
 build_script:
   - npm run rebuild
 
+artifacts:
+  path: .
+  name: all
+
 test: off
+
+
+deploy:
+
+- provider: GitHub
+
+  auth_token:
+
+    secure: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
