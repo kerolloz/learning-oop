@@ -20,17 +20,6 @@ environment:
   GH_TOKEN: 
     secure: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
 
-artifacts:
-  path: dist
-  name: all
-
 test: off
 
 
-deploy:
-
-- provider: GitHub
-
-  auth_token:
-
-    secure: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
