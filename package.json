@@ -1,13 +1,13 @@
 {
   "name": "learning-oop",
-  "version": "1.0.20",
+  "version": "v1.0.21",
   "description": "C++ Object-Oriented Exercises!",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "rebuild": "electron-rebuild -f -w yourmodule",
     "pack": "build --dir",
-    "dist": "build"
+    "dist": "electron-builder --publish always"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
