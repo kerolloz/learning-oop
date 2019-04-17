@@ -17,7 +17,8 @@ install:
 build_script:
   - npm run dist
 enviorment:
-  GH_TOKEN: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
+  GH_TOKEN: 
+    secure: aIiYr0MeanCLsD/pLbbRO0XtDuSTpRor3ABjJMGPqjvlmLDvAl49TG5VtphFXSnF
 
 artifacts:
   path: dist
