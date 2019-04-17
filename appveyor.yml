@@ -18,7 +18,7 @@ build_script:
   - npm run build
 
 artifacts:
-  path: 
+  path: dist
   name: all
 
 test: off
