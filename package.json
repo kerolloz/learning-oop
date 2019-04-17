@@ -15,8 +15,8 @@
     "tutorial",
     "demo"
   ],
-  "author": "",
-  "license": "",
+  "author": "kerollos magdy",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^4.1.4",
     "electron-rebuild": "^1.8.4"
