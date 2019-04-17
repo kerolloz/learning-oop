@@ -7,7 +7,7 @@
     "start": "electron .",
     "rebuild": "electron-rebuild -f -w yourmodule",
     "pack": "build --dir",
-    "dist": "electron-builder --publish always"
+    "dist": "electron-builder --no-git-tag-version --publish always"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
