@@ -1,10 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "learning-oop",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "C++ Object-Oriented Exercises!",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w yourmodule"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -14,10 +15,11 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "",
+  "license": "",
   "devDependencies": {
-    "electron": "^4.1.4"
+    "electron": "^4.1.4",
+    "electron-rebuild": "^1.8.4"
   },
   "dependencies": {
     "codemirror": "^5.45.0",

@@ -31,7 +31,6 @@ function loadExercise(clicked_id) {
     // show compile or check button
 
 }
-
 function compile() {
     const {
         exec
@@ -47,18 +46,8 @@ function compile() {
         // compile or check
         // tell the user whether it's a correct or a wrong answer!
         const exerciseNumber = currentExercise.split("-");
-        exec('./check ' + exerciseNumber[1], (err, stdout, stderr) => {
-            if (err) {
-                // node couldn't execute the command
-                console.log(err);
-                return;
-            }
-
-            // the *entire* stdout and stderr (buffered)
-
-            console.log(`stdout: ${stdout}`);
-            console.log(`stderr: ${stderr}`);
-        });
+        const addon = require('./build/Release/addon');
+        alert(addon.verify(parseInt(exerciseNumber[1])));
     });
 
 }

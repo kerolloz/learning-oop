@@ -9,12 +9,11 @@
   <script src="node_modules/codemirror/lib/codemirror.js"></script>
   <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
   <script src="node_modules/codemirror/mode/clike/clike.js"></script>
-
   <style>
     .CodeMirror {
       border-top: 1px grey;
       border-bottom: 1px gray;
-      height:90vh;
+      height: 84vh;
     }
 
     .CodeMirror pre>* {
@@ -50,6 +49,9 @@
     </div>
     <div class="column3">
       <div id="codeEditor"></div>
+      <div class="solutionButton">
+        <button onclick="compile()">Check Solution!</button>
+      </div>
     </div>
   </div>
 
@@ -66,6 +68,7 @@
     // You can also require other files to run in this process
     require('./renderer.js')
   </script>
+
 </body>
 
 </html>
