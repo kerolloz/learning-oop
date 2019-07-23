@@ -16,8 +16,8 @@
   "author": "kerollos magdy",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.1.4",
-    "electron-builder": "latest"
+    "electron": "^5.0.7",
+    "electron-builder": "^21.1.1"
   },
   "dependencies": {
     "codemirror": "^5.45.0",
