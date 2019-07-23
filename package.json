@@ -5,25 +5,18 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "postinstall": "install-app-deps",
-    "rebuild": "electron-rebuild",
-    "clean": "rimraf dist && mkdirp dist",
+    "postinstall": "electron-builder install-app-deps",
     "build": "build --dir",
     "dist": "build"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Electron"
   ],
   "author": "kerollos magdy",
   "license": "MIT",
   "devDependencies": {
     "electron": "^4.1.4",
-    "electron-rebuild": "^1.8.4",
     "electron-builder": "latest"
   },
   "dependencies": {
