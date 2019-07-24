@@ -1,0 +1,34 @@
+{
+    "productName": "Learning OOP",
+    "files": [
+        "exercises",
+        "**/*",
+        "!**/*.ts",
+        "!*.code-workspace",
+        "!LICENSE.md",
+        "!package.json",
+        "!package-lock.json",
+        "!src/",
+        "!_config.yml",
+        "!tsconfig.json",
+        "!tslint.json"
+    ],
+    "win": {
+        "icon": "dist",
+        "target": [
+            "portable"
+        ]
+    },
+    "mac": {
+        "icon": "dist",
+        "target": [
+            "dmg"
+        ]
+    },
+    "linux": {
+        "icon": "dist/test.png",
+        "target": [
+            "AppImage"
+        ]
+    }
+}
