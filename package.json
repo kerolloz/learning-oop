@@ -9,7 +9,6 @@
     "build": "build --dir",
     "dist": "build"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron"
   ],
