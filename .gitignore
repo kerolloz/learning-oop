@@ -65,3 +65,6 @@ ts-gen
 
 # Used to accelerate CI builds
 .depshash
+
+bin/
+build/
