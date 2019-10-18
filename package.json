@@ -6,8 +6,6 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps electron-rebuild",
-    "build": "build --dir",
-    "dist": "build",
     "rebuild": "electron-rebuild"
   },
   "keywords": [
