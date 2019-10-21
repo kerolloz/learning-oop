@@ -1,5 +1,7 @@
 # C++ Object-Oriented Programming exercises
 
+[![Build Status](https://travis-ci.com/kerolloz/learning-oop.svg?branch=master)](https://travis-ci.com/kerolloz/learning-oop)
+
 WIP :WIP:!
 
 > Coding challenges for those who want to learn Object Oriented Programming in C++ :fire:
