@@ -5,9 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "postinstall": "electron-builder install-app-deps",
+    "postinstall": "electron-builder install-app-deps electron-rebuild",
     "build": "build --dir",
-    "dist": "build"
+    "dist": "build",
+    "rebuild": "electron-rebuild"
   },
   "keywords": [
     "Electron"
@@ -18,11 +19,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "electron": "^5.0.7",
-    "electron-builder": "^21.1.1"
+    "electron": "^5.0.13",
+    "electron-builder": "^21.2.0",
+    "electron-rebuild": "^1.10.0"
   },
   "dependencies": {
-    "codemirror": "^5.48.2",
+    "codemirror": "^5.51.0",
     "markdown-it": "^8.4.2"
   }
 }
