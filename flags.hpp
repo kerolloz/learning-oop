@@ -1,9 +1,11 @@
-enum class Compilation{
+enum class Compilation
+{
     SUCCESS,
     FAILED
 };
 
-enum class Test{
+enum class Test
+{
     SUCCESS,
     FAILED
 };
