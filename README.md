@@ -1,7 +1,11 @@
 # C++ Object-Oriented Programming exercises
->Coding challenges for those who want to learn Object Oriented Programming in C++ :fire:
+
+WIP :WIP:!
+
+> Coding challenges for those who want to learn Object Oriented Programming in C++ :fire:
 
 ## Contents
+
 - [Installation](#installation)
   - [Windows](#windows)
   - [Linux](#linux)
@@ -9,5 +13,7 @@
 - [Exercises](/exercises)
 
 ## Installation
+
 ### Linux
+
 ### Windows
