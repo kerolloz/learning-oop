@@ -68,3 +68,6 @@ ts-gen
 
 bin/
 build/
+*.out
+create-exercise
+create-exercise.o

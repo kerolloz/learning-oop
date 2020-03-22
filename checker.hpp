@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #ifdef _WIN32
 #include <direct.h>
 #define getcwd _getcwd // stupid MSFT "deprecation" warning
@@ -15,11 +14,11 @@ private:
     string tester;
     string compilerExecutable;
     string cwd;
-    std::string get_cwd()
+    string get_cwd()
     {
         // returns current working directory
         char temp[1000];
-        return (getcwd(temp, sizeof(temp)) ? std::string(temp) : std::string(""));
+        return (getcwd(temp, sizeof(temp)) ? string(temp) : string(""));
     }
 
 public:
@@ -27,21 +26,21 @@ public:
     {
         tester = move(test);
         cwd = get_cwd();
-        compilerExecutable = "g++";
+        compilerExecutable = "make";
     }
 
     Compilation compile()
     {
-        std::string command = compilerExecutable + " " + cwd + "/" + tester + " -o " + cwd + "/test";
+        string command = compilerExecutable + " " + cwd + "/" + tester;
         int compilationState = system(command.c_str());
         return (compilationState) ? Compilation::FAILED : Compilation::SUCCESS;
     }
 
     Test test()
     {
-        std::string command = "./test";
+        string command = cwd + "/" + tester;
         int returnValue = system(command.c_str());
-        system("rm ./test"); // remove the test binary after testing
+        system(("rm " + command).c_str()); // remove the test binary after testing
         return (returnValue == 0) ? Test::SUCCESS : Test::FAILED;
     }
 };

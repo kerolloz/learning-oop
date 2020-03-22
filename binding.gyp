@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "addon",
+      "target_name": "checker",
       "sources": [ "check.cpp", "checker.hpp", "flags.hpp" ]
     }
   ]

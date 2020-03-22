@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./style.css">
   <title>OOP Exercises</title>
+  <script src="../node_modules/codemirror/lib/codemirror.js"></script>
+  <link rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css">
+  <script src="../node_modules/codemirror/mode/clike/clike.js"></script>
   <script src="exercise.js"></script>
-  <script src="node_modules/codemirror/lib/codemirror.js"></script>
-  <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
-  <script src="node_modules/codemirror/mode/clike/clike.js"></script>
   <style>
     .CodeMirror {
       border-top: 1px grey;
@@ -38,10 +38,7 @@
   </div>
   <div class="row">
     <div class="column1">
-      <ul>
-        <script>
-          writeExercises()
-        </script>
+      <ul id="exercises-list">
       </ul>
     </div>
     <div class="column2">
@@ -50,7 +47,7 @@
     <div class="column3">
       <div id="codeEditor"></div>
       <div class="solutionButton">
-        <button onclick="compile()">Check Solution!</button>
+        <button id="check-sol-btn" onclick="compile()" disabled>Check Solution!</button>
       </div>
     </div>
   </div>
@@ -63,10 +60,6 @@
       matchBrackets: true,
       mode: "text/x-c++src"
     });
-  </script>
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
   </script>
 
 </body>

@@ -2,10 +2,10 @@
   "name": "learning-oop",
   "version": "v1.0.21",
   "description": "C++ Object-Oriented Exercises!",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "postinstall": "electron-builder install-app-deps electron-rebuild",
+    "postinstall": "electron-builder install-app-deps && electron-rebuild",
     "rebuild": "electron-rebuild"
   },
   "keywords": [
@@ -17,12 +17,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "electron": "^5.0.13",
+    "electron": "^8.0.0",
     "electron-builder": "^21.2.0",
     "electron-rebuild": "^1.10.0"
   },
   "dependencies": {
     "codemirror": "^5.51.0",
-    "markdown-it": "^8.4.2"
+    "markdown-it": "^10.0.0"
   }
 }

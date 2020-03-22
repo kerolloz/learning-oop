@@ -32,19 +32,12 @@ std::string to_string(const T &n)
 string verify(int questionNumber)
 {
     string exercisesDir = "exercises/";
-    string questionDir = "exercise-" + to_string(questionNumber) + "/";
-    Checker c(exercisesDir + questionDir + "tester.cpp");
+    string questionDir = to_string(questionNumber) + "/";
+    Checker checker(exercisesDir + questionDir + "tester");
     cout << "Testing Question #" << questionNumber << ":" << endl;
-    if (Compilation::SUCCESS == c.compile())
+    if (Compilation::SUCCESS == checker.compile())
     {
-        if (Test::SUCCESS == c.test())
-        {
-            return "CORRECT Answer!";
-        }
-        else
-        {
-            return "WRONG Answer.";
-        }
+        return (Test::SUCCESS == checker.test()) ? "CORRECT Answer!" : "WRONG Answer.";
     }
     else
     {
@@ -68,4 +61,4 @@ void Initialize(Local<Object> exports)
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
 
-} // namespace demo
+}
