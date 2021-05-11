@@ -22,7 +22,7 @@
     "electron-rebuild": "^1.10.0"
   },
   "dependencies": {
-    "codemirror": "^5.51.0",
+    "codemirror": "^5.58.2",
     "markdown-it": "^8.4.2"
   }
 }
