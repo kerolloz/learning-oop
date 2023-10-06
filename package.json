@@ -19,7 +19,7 @@
   "devDependencies": {
     "electron": "^22.3.25",
     "electron-builder": "^23.6.0",
-    "electron-rebuild": "^1.10.0"
+    "electron-rebuild": "^3.2.9"
   },
   "dependencies": {
     "codemirror": "^5.58.2",
